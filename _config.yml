@@ -25,10 +25,9 @@ author:
   # Biographic information
   avatar           : "./images/avatar.png"
   name             : "My profile photo"
-  pronouns         : # example: "she/her"  
-  bio              : "Informatics Student at UMFST Tirgu Mures"
+  bio              : "Informatics Student"
   location         : "Marosvásárhely"
-  employer         : "Red Brick University"
+  employer         : "George Emil Palade University of Medicine, Pharmacy, Science and Technology of Târgu Mureș"
   uri              : "https://brthpatrick.github.io/barthpatrick.github.io/"
   email            : "barth.partick-laszlo.23@stud.umfst.ro" 
 
