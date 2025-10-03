@@ -7,16 +7,18 @@ redirect_from:
 ---
 
 <style>
-/* ---------- 1. ALAP: tábla középre és reset ---------- */
+/* Egyszerű, reszponzív sakktábla — nincs felirat a széleken */
+
+/* Színek (testreszabhatók) */
 :root{
-  --dark:#0b1022;
-  --light:#f3f7fb;
-  --accent-cyan: rgba(34,211,238,0.18);
-  --focus-green: rgba(134,239,172,0.6);
-  --border: rgba(0,0,0,0.12);
+  --dark: #0b1022;
+  --light: #f3f7fb;
+  --hover-outline: rgba(34,211,238,0.18);
+  --focus-outline: rgba(134,239,172,0.6);
+  --cell-border: rgba(0,0,0,0.12);
 }
 
-/* biztosítjuk, hogy a tábla csak annyi helyet foglaljon amennyi kell */
+/* Tábla alap */
 #sakktabla{
   border-collapse: collapse;
   margin: 28px auto;
@@ -24,134 +26,92 @@ redirect_from:
   width: fit-content;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 10px 30px rgba(2,6,23,0.6);
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  box-shadow: 0 10px 30px rgba(2,6,23,0.5);
+  background: rgba(255,255,255,0.01);
 }
 
-/* ---------- 2. RUGALMAS MÉRETEZÉS (responsive) ---------- */
-/* preferált méret: 8vw; minimum 36px, maximum 88px */
+/* Rugalmas cellaméretezés: preferált 8vw, min 36px, max 88px */
 #sakktabla td {
   width: max(36px, min(8vw, 88px));
   height: max(36px, min(8vw, 88px));
   padding: 0;
   margin: 0;
-  border: 1px solid var(--border);
+  border: 1px solid var(--cell-border);
   text-align: center;
   vertical-align: middle;
   font-weight: 600;
   font-size: calc(10px + 0.6vw);
   transition: transform 120ms ease, outline 120ms ease, background 120ms ease;
   position: relative;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.02);
   background-clip: padding-box;
 }
 
-/* ---------- 3. MINTÁZAT: váltakozó színek ---------- */
-/* sötét mezők */
+/* Váltakozó színek: sötét és világos */
 #sakktabla tr:nth-child(even) td:nth-child(odd),
 #sakktabla tr:nth-child(odd) td:nth-child(even) {
-  background: linear-gradient(180deg, #071425 0%, var(--dark) 100%);
+  background: linear-gradient(180deg,#061425 0%, var(--dark) 100%);
   color: #e6eef6;
 }
 
-/* világos mezők */
 #sakktabla tr:nth-child(even) td:nth-child(even),
 #sakktabla tr:nth-child(odd) td:nth-child(odd) {
-  background: linear-gradient(180deg, #ffffff 0%, var(--light) 100%);
-  color: #071425;
+  background: linear-gradient(180deg,#ffffff 0%, var(--light) 100%);
+  color: #061425;
 }
 
-/* ---------- 4. HOVER és INTERAKCIÓ ---------- */
+/* Hover effekt (kicsit kiemeli a mezőt) */
 #sakktabla td:hover{
   transform: scale(1.02);
-  outline: 3px solid var(--accent-cyan);
+  outline: 3px solid var(--hover-outline);
   z-index: 2;
 }
 
-/* Fókusz (akadálymentességhez: ha a td fókuszálható lesz) */
+/* Fókusz (ha a td fókuszálható lesz) */
 #sakktabla td:focus{
-  outline: 3px solid var(--focus-green);
+  outline: 3px solid var(--focus-outline);
   outline-offset: -3px;
 }
 
-/* ---------- 5. SZÉLEKEN LÉVŐ "CÍMKÉK" (pseudo elemek) ---------- */
-/* Ezek a jelölők csak vizuális támpontot adnak; nem módosítják a HTML-t. */
-
-/* felső oszlopbetűk (a-h): a tábla fölött jelennek meg */
-#sakktabla::before {
-  content: "a   b   c   d   e   f   g   h";
-  display: block;
-  text-align: center;
-  font-size: calc(10px + 0.4vw);
-  color: rgba(255,255,255,0.45);
-  margin-bottom: 8px;
-  letter-spacing: 12px;
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial;
-}
-
-/* bal oldali sorok (1-8): pseudo-címkék a tábla mellett (csak vizuális) */
-#sakktabla td::before{
-  /* alap: üres, majd sor-specifikusan felülírjuk */
-  content: "";
-  position: absolute;
-  left: 6px;
-  top: 4px;
-  font-size: 10px;
-  color: rgba(255,255,255,0.45);
-  pointer-events: none;
-}
-
-/* sorok indexelése (1 alul, 8 felül) - a CSS sorindex viszont nem adja vissza a számot egyszerűen,
-   ezért itt egy vizuális, de egyszerűsített megoldás: minden sorban a bal felső mezőbe írunk számot. */
-/* 1) megcélozzuk az utolsó tr-et (8. sor) -> de nth-child számmal: tr:nth-child(1) a felső sor */
-/* Itt a tartalom csak akkor látszik ha szeretnéd; alapból ki van kapcsolva (üres) */
-/* Ha szükséges, feloldhatjuk és beállítjuk a tényleges számokat (mondjad). */
-
-/* ---------- 6. FINE-TUNE mobilon ---------- */
+/* Mobilon kisebb margó és enyhébb árnyék */
 @media (max-width:520px){
   #sakktabla {
     margin: 12px auto;
-    box-shadow: 0 6px 18px rgba(2,6,23,0.55);
+    box-shadow: 0 6px 18px rgba(2,6,23,0.45);
   }
-  #sakktabla::before{ font-size:11px; letter-spacing:8px; }
 }
-
-/* ---------- 7. opcionális: sötét / magas kontraszt mód (pl. --light / --dark felcserélés) ---------- */
-/* Ezt később egy toggle-lel vagy prefers-color-scheme alapján lehet aktiválni. */
-
 </style>
 
 <table id='sakktabla' cellspacing=0>
-    <tr>
-        <td></td><td></td><td></td><td></td>
-        <td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td></td><td></td><td></td><td></td>
-        <td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td></td><td></td><td></td><td></td>
-        <td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td></td><td></td><td></td><td></td>
-        <td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td></td><td></td><td></td><td></td>
-        <td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td></td><td></td><td></td><td></td>
-        <td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td></td><td></td><td></td><td></td>
-        <td></td><td></td><td></td><td></td>
-    </tr>
-    <tr>
-        <td></td><td></td><td></td><td></td>
-        <td></td><td></td><td></td><td></td>
-    </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td>
+  </tr>
+  <tr>
+    <td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td>
+  </tr>
 </table>
