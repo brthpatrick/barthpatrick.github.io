@@ -24,12 +24,12 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "avatar.png"
-  name             : "Barth Patrick László"
+  name             : "My profile photo"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Informatics Student at UMFST Tirgu Mures"
   location         : "Marosvásárhely"
   employer         : "Red Brick University"
-  uri              : # URL
+  uri              : "https://brthpatrick.github.io/barthpatrick.github.io/"
   email            : "barth.partick-laszlo.23@stud.umfst.ro" 
 
   # Academic websites
