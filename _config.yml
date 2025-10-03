@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Barth Patrick László WEBFej"
+title                    : "Barth Patrick László WEBFEJLESZTÉS Labor"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -27,7 +27,7 @@ author:
   name             : "Barth Patrick László"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
+  location         : "Marosvásárhely"
   employer         : "Red Brick University"
   uri              : # URL
   email            : "barth.partick-laszlo.23@stud.umfst.ro" 
