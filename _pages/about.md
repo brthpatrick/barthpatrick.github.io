@@ -1,5 +1,5 @@
 ---
-permalink: 
+permalink: /
 title: "Welcome to my Academic Portfolio"
 author_profile: true
 redirect_from: 
