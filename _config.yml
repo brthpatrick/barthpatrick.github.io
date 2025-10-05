@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Barth Patrick László"
   bio              : "Informatics Student"
-  location         : "Târgu Mureș, Romaia"
+  location         : "Târgu Mureș, Romania"
   employer         : "UMFST of Târgu Mureș"
   uri              : "https://brthpatrick.github.io/barthpatrick.github.io/"
   email            : "barth.partick-laszlo.23@stud.umfst.ro" 
@@ -34,12 +34,11 @@ author:
   # Academic websites
  
   # Repositories and software development
-  github           : "https://github.com/brthpatrick"
+  github           : "brthpatrick"
 
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
