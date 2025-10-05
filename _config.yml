@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Barth Patrick László WEBFEJLESZTÉS Labor"
+title                    : "WEBFEJLESZTÉS Labor"
 title_separator          : "-"
 name                     : &name "Barth Patrick László"
 description              : &description "Patrick's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
