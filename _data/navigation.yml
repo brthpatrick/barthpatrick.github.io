@@ -17,6 +17,9 @@ main:
     
   - title: "CV"
     url: /cv/
+
+  - title: "Chess Table"
+    url: /chess
     
   # - title: "CV"
   #   url: /cv-json/

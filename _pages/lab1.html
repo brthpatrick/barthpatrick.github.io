@@ -1,15 +1,14 @@
 ---
-permalink: lab1
-title: "Sakktabla"
+permalink: chess
+title: "Chess Table"
 author_profile: true
 redirect_from: 
-  - /lab1/
+  - /chess/
 ---
 
 <style>
-/* Egyszerű, reszponzív sakktábla — nincs felirat a széleken */
 
-/* Színek (testreszabhatók) */
+/* Színek */
 :root{
   --dark: #0b1022;
   --light: #f3f7fb;
@@ -30,7 +29,7 @@ redirect_from:
   background: rgba(255,255,255,0.01);
 }
 
-/* Rugalmas cellaméretezés: preferált 8vw, min 36px, max 88px */
+/* Cellaméretezés */
 #sakktabla td {
   width: max(36px, min(8vw, 88px));
   height: max(36px, min(8vw, 88px));
@@ -46,7 +45,7 @@ redirect_from:
   background-clip: padding-box;
 }
 
-/* Váltakozó színek: sötét és világos */
+/* Váltakozó színek */
 #sakktabla tr:nth-child(even) td:nth-child(odd),
 #sakktabla tr:nth-child(odd) td:nth-child(even) {
   background: linear-gradient(180deg,#061425 0%, var(--dark) 100%);
@@ -59,20 +58,20 @@ redirect_from:
   color: #061425;
 }
 
-/* Hover effekt (kicsit kiemeli a mezőt) */
+/* Hover effekt - kiemeli a mezőt */
 #sakktabla td:hover{
   transform: scale(1.02);
   outline: 3px solid var(--hover-outline);
   z-index: 2;
 }
 
-/* Fókusz (ha a td fókuszálható lesz) */
+/* Fókusz */
 #sakktabla td:focus{
   outline: 3px solid var(--focus-outline);
   outline-offset: -3px;
 }
 
-/* Mobilon kisebb margó és enyhébb árnyék */
+/* Mobilon beállítás */
 @media (max-width:520px){
   #sakktabla {
     margin: 12px auto;
