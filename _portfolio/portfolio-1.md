@@ -2,8 +2,9 @@
 title: "Local Farmers' Market App"
 excerpt: "A mobile and desktop application developed in C# and Kotlin to support local farmers and promote regional products."
 collection: portfolio
-image: /images/localfarmersmarket.png
 ---
+
+![Local Farmers Market](/images/localfarmersmarket.png)
 
 This project, titled **“Local Farmers’ Market”**, is the main focus of my **bachelor’s thesis**.  
 It was developed in both **C#** (desktop version) and **Kotlin** (Android mobile version).  
