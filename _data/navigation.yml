@@ -10,13 +10,13 @@
 main:
       
   - title: "Portfolio"
-    url: portfolio
+    url: /portfolio
          
   - title: "CV"
-    url: cv
+    url: /cv
 
   - title: "Chess Table"
-    url: chess
+    url: /chess
     
   # - title: "CV"
   #   url: /cv-json/
