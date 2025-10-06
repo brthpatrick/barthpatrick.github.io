@@ -4,7 +4,7 @@ excerpt: "A C#/.NET application using Microsoft Azure Form Recognizer to extract
 collection: portfolio
 ---
 
-![Table Recognition](https://raw.githubusercontent.com/brthpatrick/barthpatrick.github.io/refs/heads/master/images/tablerecognizer.png)
+![Table Recognition](/images/tablerecognizer.png)
 
 **Table Recognition & Analysis** is a project implemented in **C# (.NET Framework)** that leverages **Microsoft Azure Form Recognizer** to automatically detect and parse *n* arbitrary tables from uploaded documents (PDFs, images). The application extracts structured data, normalizes values across multiple tables, and discovers relationships and commonalities between extracted datasets.
 
