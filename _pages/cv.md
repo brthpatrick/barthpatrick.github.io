@@ -32,35 +32,36 @@ Work experience
 
 * **Summer 2025:** Internship — *Software Developer*  
   **Accenture Services SRL** | Târgu Mureș, Romania  
-  *Software development in C# and .NET Framework*
+  *Software development in C# and .NET Framework*  
+
+Language Skills
+======
+
+**Mother tongue(s):** Hungarian  
+
+**Other language(s):**
+
+* **Romanian**  
+  * Listening: C1  
+  * Reading: C1  
+  * Writing: C2  
+  * Spoken Production: C2  
+  * Spoken Interaction: C1  
+
+* **English**  
+  * Listening: B1  
+  * Reading: C2  
+  * Writing: B2  
+  * Spoken Production: B1  
+  * Spoken Interaction: B1  
+
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
+* **Programming Languages:** C, C++, C#, Java, Kotlin  
+* **Frameworks & Technologies:** .NET Framework, Laravel, Android Studio  
+* **Web Development:** HTML, CSS (basic knowledge)  
+* **Databases:** SQL, MS-SQL  
+* **Software Tools:** MS Office (advanced level – Word, PowerPoint, Excel)
+
