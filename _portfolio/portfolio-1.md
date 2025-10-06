@@ -1,7 +1,17 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Local Farmers' Market App"
+excerpt: "A mobile and desktop application developed in C# and Kotlin to support local farmers and promote regional products.<br/><img src='/images/localfarmersmarket.png'>"
 collection: portfolio
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+This project, titled **“Local Farmers’ Market”**, is the main focus of my **bachelor’s thesis**.  
+It was developed in both **C#** (desktop version) and **Kotlin** (Android mobile version).  
+
+The goal of the application is to **connect local farmers with consumers**, making it easier for users to discover and purchase fresh, locally produced goods directly from small producers.  
+
+Through this project, I aimed to:
+- Support and promote **local agriculture and sustainability**  
+- Provide a **user-friendly platform** with product listings, farmer profiles, and location-based search  
+- Gain practical experience in **cross-platform development** and database integration  
+
+The project reflects my passion for combining technology with real-world community impact.
