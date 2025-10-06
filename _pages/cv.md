@@ -11,9 +11,13 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Student
+  George Emil Palade University of Medicine, Pharmacy, Science and Technology of Târgu Mureș [
+  09/2023 – Current ]
+  City: Targu Mures | Country: Romania | Website: https://umfst.ro/en/
+* High School Diploma
+  Liceul Teoretic Carei [ 09/2012 – 06/2016 ]
+  City: Carei | Country: Romania | Field(s) of study: Natural sciences, mathematics and statistics
 
 Work experience
 ======
