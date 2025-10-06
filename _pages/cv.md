@@ -65,3 +65,19 @@ Skills
 * **Databases:** SQL, MS-SQL  
 * **Software Tools:** MS Office (advanced level – Word, PowerPoint, Excel)
 
+Driving Licence
+======
+
+* **AM**
+* **B1**
+* **B**
+
+Hobbies and Interests
+======
+
+* Hiking  
+* Reading  
+* Cycling  
+* Listening to music  
+* Board games  
+* Socializing
