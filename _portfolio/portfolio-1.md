@@ -2,6 +2,7 @@
 title: "Local Farmers' Market App"
 excerpt: "A mobile and desktop application developed in C# and Kotlin to support local farmers and promote regional products."
 collection: portfolio
+image: https://raw.githubusercontent.com/brthpatrick/barthpatrick.github.io/refs/heads/master/images/localfarmersmarket.png
 ---
 
 ![Local Farmers Market](https://raw.githubusercontent.com/brthpatrick/barthpatrick.github.io/refs/heads/master/images/localfarmersmarket.png)
