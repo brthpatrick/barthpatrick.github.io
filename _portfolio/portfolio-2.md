@@ -2,7 +2,10 @@
 title: "AI-Generated Escape Room Web Application"
 excerpt: "An interactive escape room web app built in Laravel, where an AI dynamically generates rooms and puzzles."
 collection: portfolio
+iamge: https://raw.githubusercontent.com/brthpatrick/barthpatrick.github.io/refs/heads/master/images/aiescaperoom.png
 ---
+
+![AI-Generated Escape Room](https://raw.githubusercontent.com/brthpatrick/barthpatrick.github.io/refs/heads/master/images/aiescaperoom.png)
 
 This project explores the combination of **artificial intelligence** and **interactive web development**.  
 I created an **AI-driven escape room application** built with **Laravel**, where the system dynamically generates both the **room environment** and the **puzzles** based on user preferences.
