@@ -1,6 +1,6 @@
 ---
 title: "Table Recognition & Analysis App (Azure Form Recognizer)"
-excerpt: "A C#/.NET application using Microsoft Azure Form Recognizer to extract, normalize and analyze tables from arbitrary documents for value extraction and relation discovery.>"
+excerpt: "A C#/.NET application using Microsoft Azure Form Recognizer to extract, normalize and analyze tables from arbitrary documents for value extraction and relation discovery."
 collection: portfolio
 ---
 
