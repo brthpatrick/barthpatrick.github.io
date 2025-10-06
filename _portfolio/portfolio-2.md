@@ -1,6 +1,6 @@
 ---
 title: "AI-Generated Escape Room Web Application"
-excerpt: "An interactive escape room web app built in Laravel, where an AI dynamically generates rooms and puzzles.<br/><img src='/images/aiescaperoom.png'>"
+excerpt: "An interactive escape room web app built in Laravel, where an AI dynamically generates rooms and puzzles."
 collection: portfolio
 ---
 
