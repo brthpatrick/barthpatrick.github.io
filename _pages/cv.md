@@ -22,20 +22,17 @@ City: Carei | Country: Romania | Field(s) of study: Natural sciences, mathematic
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Summer 2024:** Erasmus+ project — *Web Developer*  
+  **WEBAPIX K.f.t** | Budapest  
+  *Web development in Laravel*
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* **Summer 2025:** Erasmus+ project — *Web Developer*  
+  **WEBAPIX K.f.t** | Budapest  
+  *Web development in Laravel*
 
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* **Summer 2025:** Internship — *Software Developer*  
+  **Accenture Services SRL** | Târgu Mureș, Romania  
+  *Software development in C# and .NET Framework*
   
 Skills
 ======
